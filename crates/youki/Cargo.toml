@@ -18,7 +18,7 @@ v1 = ["libcgroups/v1", "libcontainer/v1"]
 cgroupsv2_devices = ["libcgroups/cgroupsv2_devices", "libcontainer/cgroupsv2_devices"]
 
 [dependencies.clap]
-version = "3.2.23"
+version = "4.0.28"
 default-features = false
 features = ["std", "suggestions", "derive", "cargo"]
 
