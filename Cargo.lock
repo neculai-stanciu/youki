@@ -226,7 +226,7 @@ dependencies = [
  "maybe-owned",
  "rustix",
  "windows-sys 0.42.0",
- "winx",
+ "winx 0.34.0",
 ]
 
 [[package]]
@@ -261,7 +261,7 @@ dependencies = [
  "cap-primitives",
  "once_cell",
  "rustix",
- "winx",
+ "winx 0.34.0",
 ]
 
 [[package]]
@@ -2915,9 +2915,9 @@ dependencies = [
 
 [[package]]
 name = "system-interface"
-version = "0.25.3"
+version = "0.25.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6afe2d3c354cfbfdc14611db99b272f59f80289a2abe30c8b4355ee619bc22ef"
+checksum = "f355df185d945435f24c51fda9bf01bea6acb6c0b753e1241e5cc05413a659d4"
 dependencies = [
  "bitflags",
  "cap-fs-ext",
@@ -2925,8 +2925,8 @@ dependencies = [
  "fd-lock",
  "io-lifetimes",
  "rustix",
- "windows-sys 0.42.0",
- "winx",
+ "windows-sys 0.45.0",
+ "winx 0.35.0",
 ]
 
 [[package]]
@@ -4132,6 +4132,17 @@ dependencies = [
  "bitflags",
  "io-lifetimes",
  "windows-sys 0.42.0",
+]
+
+[[package]]
+name = "winx"
+version = "0.35.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "129cd8ee937d535e1a239d9d3c9c0525af0454bc0967d9211a251be062513520"
+dependencies = [
+ "bitflags",
+ "io-lifetimes",
+ "windows-sys 0.45.0",
 ]
 
 [[package]]
