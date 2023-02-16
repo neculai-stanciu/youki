@@ -226,7 +226,7 @@ dependencies = [
  "maybe-owned",
  "rustix",
  "windows-sys 0.42.0",
- "winx 0.34.0",
+ "winx 0.34.1",
 ]
 
 [[package]]
@@ -261,7 +261,7 @@ dependencies = [
  "cap-primitives",
  "once_cell",
  "rustix",
- "winx 0.34.0",
+ "winx 0.34.1",
 ]
 
 [[package]]
@@ -4131,13 +4131,13 @@ checksum = "447660ad36a13288b1db4d4248e857b510e8c3a225c822ba4fb748c0aafecffd"
 
 [[package]]
 name = "winx"
-version = "0.34.0"
+version = "0.34.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9baf690e238840de84bbfad6ad72d6628c41d34c1a5e276dab7fb2c9167ca1ac"
+checksum = "5bdaa56ed83ae727e40236218955924a676426a690b61b133102f8390b60aec8"
 dependencies = [
  "bitflags",
  "io-lifetimes",
- "windows-sys 0.42.0",
+ "windows-sys 0.45.0",
 ]
 
 [[package]]
