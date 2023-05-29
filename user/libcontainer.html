@@ -32,6 +32,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../";
@@ -69,10 +70,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -188,7 +191,7 @@
 <p><code>tty</code> : this deals with setting up the tty for the container process.</p>
 </li>
 <li>
-<p><code>utils</code> : provides various utility functions, such as <code>parse_env</code> to parse the env variables, <code>do_exec</code> to do an exec syscall and execute a binary in the container process, <code>get_cgroups_path</code>, <code>create_dir_all_with_mode</code> etc.</p>
+<p><code>utils</code> : provides various utility functions, such as <code>parse_env</code> to parse the env variables, <code>get_cgroups_path</code>, <code>create_dir_all_with_mode</code> etc.</p>
 </li>
 </ul>
 
@@ -240,5 +243,6 @@
         <!-- Custom JS scripts -->
 
 
+    </div>
     </body>
 </html>
